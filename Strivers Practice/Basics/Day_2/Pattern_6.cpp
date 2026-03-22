@@ -6,13 +6,10 @@ int main() {
     cin.tie(NULL);
     
     //Outer loop runs 5 times i increases with every iteration
-    for(int i = 0; i<5 ; i++){
-        //x resets at the start of every outer loop
-        int x =1;
+    for(int i = 0; i<=5 ; i++){
         //Inner loop runs 5 then 4 then 3 ... then once
-        for(int j = 0; j < 5-i; j++){
-            cout << x;
-            x++;
+        for(int j = 1; j <= 5-i; j++){
+            cout << j;
         }
         cout << "\n";
     }
