@@ -4,7 +4,7 @@
     {
       "label": "Run C++ with IO",
       "type": "shell",
-      "command": "g++ \"${file}\" -o \"${fileDirname}\\a.exe\" && \"${fileDirname}\\a.exe\" > \"${fileDirname}\\output.txt\"",
+      "command": "g++ \"${file}\" -o \"${fileDirname}\\a.exe\" && \"${fileDirname}\\a.exe\" < \"${fileDirname}\\input.txt\" > \"${fileDirname}\\output.txt\"",
       "group": {
         "kind": "build",
         "isDefault": true
