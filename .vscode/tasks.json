@@ -1,15 +1,20 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Run C++ with IO",
-      "type": "shell",
-      "command": "g++ \"${file}\" -o \"${fileDirname}\\a.exe\" && \"${fileDirname}\\a.exe\" < \"${fileDirname}\\input.txt\" > \"${fileDirname}\\output.txt\"",
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": []
-    }
-  ]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build & Run",
+            "type": "shell",
+            "command": "g++ -std=c++20 \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\" && \"${fileDirname}/${fileBasenameNoExtension}\"",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
 }
