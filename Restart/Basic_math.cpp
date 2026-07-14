@@ -7,7 +7,6 @@ int count_digits(int n){
         n = n/10;
         count++;
     }
-    cout << count << "\n";
     return count;
 }
 
