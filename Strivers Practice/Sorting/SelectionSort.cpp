@@ -43,7 +43,6 @@ int main() {
     }
 
     ManualSelecSort(arr);
-    cout << endl;
 
     for(auto it : arr){
         cout << it << " ";
