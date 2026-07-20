@@ -8,3 +8,5 @@ bin/
 
 # Or better, ignore common compiled binaries
 *.out
+
+.vscode/
