@@ -1,10 +1,9 @@
 *.exe
 *.out
-*.txt
-output.txt
-input.txt
 
 bin/
 
 # Or better, ignore common compiled binaries
 *.out
+
+.vscode/

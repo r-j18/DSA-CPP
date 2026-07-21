@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "1. Compile C++",
+            "type": "shell",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "args": [
+                "-std=c++20",
+                "${file}",
+                "-o",
+                "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Build & Run",
+            "type": "shell",
+            "command": "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe",
+            "dependsOn": "1. Compile C++",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Compiles and executes the active C++ file."
+        }
+    ]
+}
